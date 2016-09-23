@@ -1,0 +1,28 @@
+[include]
+    path = .gitconfig.local
+
+[push]
+    default = simple
+
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    fe = fetch
+    
+    br = branch
+    ba = branch -a
+
+    lg = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s %Cred%d%Creset'
+    lga = log --graph --all --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s %Cred%d%Creset'
+
+    dc = diff --cached
+    vimdiff = difftool --tool=vimdiff --no-prompt
+
