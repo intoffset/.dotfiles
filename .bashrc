@@ -115,3 +115,15 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Source common setting
+if [ -f ~/.bashrc_common ]; then
+    . ~/.bashrc_common
+fi
+
+# Source local setting
+if [ -f ~/.bashrc_local ]; then
+    . ~/.bashrc_local
+fi
+
+

@@ -1,0 +1,21 @@
+# .bashrc_common
+
+# User specific aliases and functions
+alias ls='ls --color=auto'
+alias la='ls -AF'
+alias ll='ls -lAF --time-style=long-iso'
+alias lw='watch ls -CF'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias pu='pushd'
+alias po='popd'
+
+alias du='du -h'
+alias df='df -h'
+
+alias grep='grep --color=auto'
+alias hi='history 50'
+alias os='uname -a; lsb_release -a'
