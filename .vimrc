@@ -11,7 +11,7 @@ set ruler
 set list
 set listchars=tab:>-,trail:_
 set laststatus=2
-"set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
+set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 if exists('&ambiwidth')
   set ambiwidth=double
 endif
