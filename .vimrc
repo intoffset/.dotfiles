@@ -82,6 +82,7 @@ call dein#add('Shougo/vimfiler.vim')
 call dein#add('osyo-manga/vim-over')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('thinca/vim-quickrun')
+call dein#add('vim-scripts/Align')
 
 call dein#end()
 
