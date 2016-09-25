@@ -3,10 +3,7 @@
 # Ignore list
 /.vim/dein/.dein/
 /.vim/dein/merged
-/.vim/dein/repos/*
+/.vim/dein/repos/
 /.vim/dein/rollbacks/
 /.vim/dein/temp/
 /.vim/.netrwhist
-
-# Allow list
-!/.vim/dein/repos/github.com/Shougo/dein.vim
