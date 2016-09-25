@@ -72,6 +72,10 @@ call dein#add('Shougo/dein.vim')
 
 call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
 
+" Unite
+call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/neomru.vim')
+
 call dein#end()
 
 "" neocomplete.vim
