@@ -1,9 +1,5 @@
 # .gitignore
 
 # Ignore list
-/.vim/dein/.dein/
-/.vim/dein/merged
-/.vim/dein/repos/
-/.vim/dein/rollbacks/
-/.vim/dein/temp/
+/.vim/dein/
 /.vim/.netrwhist
