@@ -75,6 +75,7 @@ call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
 " Unite
 call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/neomru.vim')
+call dein#add('Shougo/vimfiler.vim')
 
 call dein#end()
 
@@ -134,6 +135,9 @@ endif
 if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
 endif
+
+"" vimfiler.vim
+noremap <Leader>vf :VimFiler -split -simple -winwidth=35 -toggle<CR>
 
 "" Filetype on
 filetype plugin indent on
