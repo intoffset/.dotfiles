@@ -79,6 +79,8 @@ call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/vimfiler.vim')
 
+call dein#add('osyo-manga/vim-over')
+
 call dein#end()
 
 "" neocomplete.vim
@@ -151,6 +153,10 @@ endif
 
 "" vimfiler.vim
 noremap <Leader>vf :VimFiler -split -simple -winwidth=35 -toggle<CR>
+
+"" vim-over
+nnoremap <Leader>ov :OverCommandLine<CR>
+vnoremap <Leader>ov :OverCommandLine<CR>
 
 "" Filetype on
 filetype plugin indent on
