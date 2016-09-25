@@ -71,6 +71,8 @@ call dein#begin(expand('~/.vim/dein'))
 call dein#add('Shougo/dein.vim')
 
 call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
+call dein#add('Shougo/neosnippet.vim', {'on_i': 1})
+call dein#add('Shougo/neosnippet-snippets', {'on_i': 1})
 
 " Unite
 call dein#add('Shougo/unite.vim')
@@ -134,6 +136,17 @@ if !exists('g:neocomplete#sources#omni#input_patterns')
 endif
 if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
+endif
+
+"" neosnippet.vim
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
 endif
 
 "" vimfiler.vim
