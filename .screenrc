@@ -7,4 +7,4 @@ autodetach on
 vbell off
 
 caption always "%-w%10L>%{=b bw}%n %t%{-}%+w%-0="
-hardstatus alwayslastline "%H%=%Y/%m/%d %02c"
+hardstatus alwayslastline "%H:%S%=%Y/%m/%d %02c"
