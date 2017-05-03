@@ -15,6 +15,8 @@ set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V
 if exists('&ambiwidth')
   set ambiwidth=double
 endif
+set conceallevel=0
+let g:vim_json_syntax_conceal = 0
 
 "" Insert option
 set cindent
