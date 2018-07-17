@@ -69,25 +69,28 @@ set background=light
 
 "" Dein
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-call dein#begin(expand('~/.vim/dein'))
-call dein#add('Shougo/dein.vim')
+if dein#load_state(expand('~/.vim/dein'))
+    call dein#begin(expand('~/.vim/dein'))
+    call dein#add('Shougo/dein.vim')
 
-call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
-call dein#add('Shougo/neosnippet.vim', {'on_i': 1})
-call dein#add('Shougo/neosnippet-snippets', {'on_i': 1})
+    call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
+    call dein#add('Shougo/neosnippet.vim', {'on_i': 1})
+    call dein#add('Shougo/neosnippet-snippets', {'on_i': 1})
 
-" Unite
-call dein#add('Shougo/unite.vim')
-call dein#add('Shougo/neomru.vim')
-call dein#add('Shougo/vimfiler.vim')
+    " Unite
+    call dein#add('Shougo/unite.vim')
+    call dein#add('Shougo/neomru.vim')
+    call dein#add('Shougo/vimfiler.vim')
 
-call dein#add('osyo-manga/vim-over')
-call dein#add('Shougo/vimproc.vim', {'build': 'make'})
-call dein#add('thinca/vim-quickrun')
-call dein#add('vim-scripts/Align')
-call dein#add('tpope/vim-fugitive')
+    call dein#add('osyo-manga/vim-over')
+    call dein#add('Shougo/vimproc.vim', {'build': 'make'})
+    call dein#add('thinca/vim-quickrun')
+    call dein#add('vim-scripts/Align')
+    call dein#add('tpope/vim-fugitive')
 
-call dein#end()
+    call dein#end()
+    call dein#save_state()
+endif
 
 "" neocomplete.vim
 " Disable AutoComplPop.
