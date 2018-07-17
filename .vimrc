@@ -147,9 +147,9 @@ endif
 
 "" neosnippet.vim
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+imap <C-k> <Plug>(neosnippet_expand_or_jump)
+smap <C-k> <Plug>(neosnippet_expand_or_jump)
+xmap <C-k> <Plug>(neosnippet_expand_target)
 
 " For conceal markers.
 if has('conceal')
@@ -158,6 +158,9 @@ endif
 
 "" vimfiler.vim
 noremap <Leader>vf :VimFiler -split -simple -winwidth=35 -toggle<CR>
+
+"" Unite.vim
+noremap <Leader>ur :Unite neomru/file<CR>
 
 "" vim-over
 nnoremap <Leader>ov :OverCommandLine<CR>
