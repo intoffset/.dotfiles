@@ -28,6 +28,6 @@ for f in ${dotfiles[@]}; do
 done
 
 # Install vim plugins
-mkdir -p ~/.vim/dein/repos/github.com/Shougo/
-git clone https://github.com/Shougo/dein.vim ~/.vim/dein/repos/github.com/Shougo/dein.vim
-vim +":silent call dein#install()" +:q
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +":silent call PlugInstall" +:q

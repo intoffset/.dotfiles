@@ -1,5 +1,6 @@
 # .gitignore
 
 # Ignore list
-/.vim/dein/
+/.vim/autoload/
+/.vim/plugged/
 /.vim/.netrwhist

@@ -67,30 +67,26 @@ endfunction
 colorscheme torte
 set background=light
 
-"" Dein
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-if dein#load_state(expand('~/.vim/dein'))
-    call dein#begin(expand('~/.vim/dein'))
-    call dein#add('Shougo/dein.vim')
+"" Vim-plug
+call plug#begin('~/.vim/plugged')
 
-    call dein#add('Shougo/neocomplete.vim', {'on_i': 1})
-    call dein#add('Shougo/neosnippet.vim', {'on_i': 1})
-    call dein#add('Shougo/neosnippet-snippets', {'on_i': 1})
+Plug 'Shougo/neocomplete.vim'
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
-    " Unite
-    call dein#add('Shougo/unite.vim')
-    call dein#add('Shougo/neomru.vim')
-    call dein#add('Shougo/vimfiler.vim')
+" Unite
+Plug 'Shougo/unite.vim'
+Plug 'Shougo/neomru.vim'
+Plug 'Shougo/vimfiler.vim'
 
-    call dein#add('osyo-manga/vim-over')
-    call dein#add('Shougo/vimproc.vim', {'build': 'make'})
-    call dein#add('thinca/vim-quickrun')
-    call dein#add('vim-scripts/Align')
-    call dein#add('tpope/vim-fugitive')
+" Others
+Plug 'osyo-manga/vim-over'
+Plug 'Shougo/vimproc.vim', {'do': 'make'}
+Plug 'thinca/vim-quickrun'
+Plug 'vim-scripts/Align'
+Plug 'tpope/vim-fugitive'
 
-    call dein#end()
-    call dein#save_state()
-endif
+call plug#end()
 
 "" neocomplete.vim
 " Disable AutoComplPop.
