@@ -30,4 +30,4 @@ done
 # Install vim plugins
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-vim +":silent call PlugInstall" +:q
+vim +":silent PlugInstall" +:q
