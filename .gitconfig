@@ -26,3 +26,6 @@
     dc = diff --cached
     vimdiff = difftool --tool=vimdiff --no-prompt
 
+[user]
+	name = intoffset
+	email = intoffset@users.noreply.github.com
