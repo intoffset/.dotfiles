@@ -27,5 +27,8 @@
     vimdiff = difftool --tool=vimdiff --no-prompt
 
 [user]
-	name = intoffset
-	email = intoffset@users.noreply.github.com
+    name = intoffset
+    email = 4951782+intoffset@users.noreply.github.com
+
+[gpg]
+    format = ssh
