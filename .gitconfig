@@ -1,5 +1,5 @@
 [include]
-    path = .gitconfig.local
+    path = ~/.gitconfig.local
 
 [push]
     default = simple
@@ -30,5 +30,8 @@
     name = intoffset
     email = 4951782+intoffset@users.noreply.github.com
 
-[gpg]
-    format = ssh
+[init]
+    defaultBranch = main
+
+[core]
+    editor = vim
